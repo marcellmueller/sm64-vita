@@ -793,9 +793,10 @@ void load_object_collision_model(void) {
         }
     }
 
-    if (marioDist < gCurrentObject->oDrawingDistance) {
+    //vitadrawdistance
+    // if (marioDist < gCurrentObject->oDrawingDistance) {
         gCurrentObject->header.gfx.node.flags |= GRAPH_RENDER_ACTIVE;
-    } else {
-        gCurrentObject->header.gfx.node.flags &= ~GRAPH_RENDER_ACTIVE;
-    }
+    // } else {
+    //     gCurrentObject->header.gfx.node.flags &= ~GRAPH_RENDER_ACTIVE;
+    // }
 }
